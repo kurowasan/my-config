@@ -1,0 +1,13 @@
+snippet ipdb "Add a debugger"
+__import__(ipdb).set_trace()
+endsnippet
+
+snippet div_example "Example of adding a html tag" b
+<${1:div}>
+	Hello world
+</${1/(\w+).*/$1/}>
+endsnippet
+
+snippet todo "this is a TODO reminder" b
+# TODO: `echo $USER` ${1:desc} `!v strftime("%c")`
+endsnippet
